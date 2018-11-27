@@ -1,4 +1,4 @@
 /**
  * View console implementation for this project.
  */
-by.epam.mark.view;
+package by.epam.mark.view;
