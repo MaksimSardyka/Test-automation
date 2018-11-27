@@ -1,7 +1,6 @@
 package by.epam.mark.action;
 
 import java.util.OptionalDouble;
-
 import by.epam.mark.entity.Group;
 import by.epam.mark.entity.Student;
 

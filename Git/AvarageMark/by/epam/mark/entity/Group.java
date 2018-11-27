@@ -14,7 +14,6 @@ public class Group {
 
     /**
      * Adds new student this group.
-     *
      * @param name
      *            Name of this student.
      * @param surname
@@ -26,7 +25,6 @@ public class Group {
 
     /**
      * Return students from this group.
-     *
      * @return List of students of this group.
      */
     public List<Student> getStudents() {
