@@ -26,12 +26,10 @@ public class Runner {
     public static void main(final String[] args) {
         Group group = new Group();
         View view = new View();
-
         // set students
         group.addStudent("Ivan", "Ivanov");
         group.addStudent("Peter", "Petrov");
         group.addStudent("Maksim", "Maksimov");
-
         final int minMark = 4;
         final int maxMark = 10;
         // set marks
@@ -46,16 +44,13 @@ public class Runner {
                 }
             }
         }
-
         // avg mark per person
         AvgMarkAction avgMark = new AvgMarkAction();
         group.getStudents().stream()
                 .forEach(s -> view.show(s.toString() + "\nAvg student mark:"
                         + avgMark.calcAvgStudentMark(s).getAsDouble()));
-
         // avg whole group mark
         view.show("\nAvg group mark:"
                 + avgMark.calaAvgGroupMark(group).getAsDouble());
-
     }
 }
