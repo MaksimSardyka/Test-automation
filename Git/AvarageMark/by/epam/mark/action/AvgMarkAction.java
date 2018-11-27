@@ -5,6 +5,9 @@ import java.util.OptionalDouble;
 import by.epam.mark.entity.Group;
 import by.epam.mark.entity.Student;
 
+/**
+ * Actions to perform in this project.
+ */
 public class AvgMarkAction {
 	/**
 	 * Calculates avarage mark for a passed group.
