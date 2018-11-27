@@ -26,6 +26,9 @@ public class AvgMarkAction {
         return avgGroupMark;
     }
 
+	/**
+	  * Calculates avarage mark for a passed student.
+	  */
     public OptionalDouble calcAvgStudentMark(Student student) {
         return student.getMarks().stream().mapToDouble(m -> m).average();
     }
