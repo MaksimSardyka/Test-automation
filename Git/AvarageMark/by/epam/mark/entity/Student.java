@@ -65,7 +65,6 @@ public class Student {
         if (MIN_MARK <= mark && mark <= MAX_MARK) {
             marks.add(mark);
         } else {
-		//wrong commit
             throw new MarkException("Wrong mark provided" + mark);
         }
     }
