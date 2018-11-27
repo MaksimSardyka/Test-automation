@@ -6,6 +6,9 @@ import by.epam.mark.entity.Group;
 import by.epam.mark.entity.Student;
 
 public class AvgMarkAction {
+	/**
+	 * Calculates avarage mark for a passed group.
+	 */
     public OptionalDouble calaAvgGroupMark(Group group) {
         OptionalDouble avgGroupMark = OptionalDouble.empty();
         int counter = 0;
