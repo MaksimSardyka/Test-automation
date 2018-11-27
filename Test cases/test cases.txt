@@ -1,0 +1,141 @@
+easyjet.com
+
+1)
+Head: 
+Проверить что поле выбора даты обратного рейса скрывается при выборе билетов в 1 конец.
+Steps:
+1)Зайти на easyjet.com/us/
+2)На вкладке Flights нажать на "One way"
+Expected result:
+Поле выбора даты обратного рейса "Returning" исчезло. 
+
+2)
+Head: 
+Проверить что ограниченивает максимальное разрешенное к бронированию количества пассажиров.
+Steps:
+1)Зайти на easyjet.com/us/
+2)Указать в поле выбора количества пассажиров число 40.
+3)Нажать на «+» справа от данного поля.
+Expected result:
+Справа появляется sidebar с сообщением:
+"Oops!
+Sorry, you are not able to select this number of passengers. 
+You can only book a maximum of 40 passengers online. 
+If you'd like to book for a larger group you can find out more by visiting our help section: Group bookings"
+И кнопкой "OK, Got it."
+
+3)
+Head: 
+Проверить что ограниченивает максимальное допустимое количество младенцев на каждого взрослого.
+Steps:
+1)Зайти на easyjet.com/us/
+2)Указать в поле "Adults(16+)" 1.
+3)Напротив надписи "Infants(<2)" дважды нажать на «+»
+Expected result:
+Справа появляется sidebar с сообщением:
+"Oops!
+Only one infant per adult is allowed You can only book one infant per adult online. 
+Please visit the Contact Us section for further information."
+И кнопкой "OK, Got it."
+
+4)
+Head: 
+Проверить что ограничивает максимальное допустимое количество несовершеннолетних на каждого взрослого.
+Steps:
+1)Зайти на easyjet.com/us/
+2)Указать в поле "Adults(16+)" 1.
+3)Напротив надписи "Children 2-15" ввести число 10
+4)Нажать на «+» справа от данного поля.
+Expected result:
+Справа появляется sidebar с сообщением:
+"Oops! 
+Sorry, you are not able to select this number or combination of passengers. 
+No more than 10 children may travel per adult on a booking; 
+also No more than 9 children may travel on a booking without an adult companion. 
+Visit our help section to find out more: Flying with children"
+И кнопкой "OK, Got it."
+
+5)
+Head: 
+Проверить что невозможно забронировать билет на обратный рейс на дату раннее даты прибытия.
+Steps:
+1)Зайти на easyjet.com/us/
+2)Нажать на поле с надписью "To" 
+3)Выбрать любую страну из предложенных
+4)Нажать на надпись "Departing". 
+5)Появляется sidebar выбора даты отправления, на котором серым фоном выделены доступные даты отправления. Нажать на любую из этих дат. 
+6)Нажать на надпись "Returning"
+Expected result:
+Справа появляется sidebar выбора дат обратного рейса.
+Самой ранняя дата должна быть не раннее указанной в поле "Departing"
+
+6)
+Head: 
+Проверить что невозможно выбрать 1 и тот-же аэропорт отбытия и прибытия для рейса.
+Steps:
+1)Зайти на easyjet.com/us/
+2)Скопировать значение из поля "From" 
+3)Вставить это-же значение в поле "To"
+4)Нажать нажать "Enter"
+Expected result:
+Поле отчистилось. Справа в данном поле появился знак "!". Возникла надпись "Please select a destination."
+
+7)
+Head: 
+Проверить что невозможно забронировать отель на срок менее 1 дня.
+Steps:
+1)Зайти на easyjet.com/us/
+2)Перейти на вкладку формы "Hotels"
+3)Нажать на "Check-out"
+Expected result:
+Самая ранняя допустимая к выбору дата должна быть на следующий день после даты, указанной в поле "Check-in"
+
+8)
+Head: 
+Проверить что отображаемые авиабилеты соответствуют запрашиваемым датам и странам отбытия/прибытия.
+Steps:
+1)Зайти на easyjet.com/us/
+2)Нажать на поле "From"
+3)Выбрать 1 предложенный вариант из появившегося сайдбара. 
+4)Нажать на поле "To"
+5)Выбрать 1 предложенный вариант из появившегося сайдбара. 
+6)Нажать на надпись "Departing". 
+7)Нажать на 1 из предложенных дат.
+8)Нажать на надпись "Returning". 
+9)Нажать на 1 из предложенных дат.
+10)Нажать на "Show Flights >"
+Expected result:
+Предложены рейсы совпадающие с:
+по дате вылета - совпадающие с "Departing"
+по дате обратного рейса - совпадающие с "Returning"
+по месту вылета — совпадающие с "From"
+по месту прибытия — совпадающие с "To"
+
+9)
+Head: 
+Проверить что невозможно бронировать билеты для младенцев без  сопроваждающих.
+Steps:
+1)Зайти на easyjet.com/us/
+2)Указать в поле «Adults(16+)» 1.
+3)Указать в поле «Infants(<2)» 1.
+4)Нажать на «-» напротив поля «Adults(16+)». 
+Expected result:
+Справа появляется sidebar с сообщением:
+"Oops!
+Only one infant per adult is allowed You can only book one infant per adult online. 
+Please visit the Contact Us section for further information."
+И кнопкой "OK, Got it."
+
+10)
+Head: 
+Проверить что предлагаемые к аренде авто соответствуют параметрам запроса.
+Steps:
+1)Зайти на easyjet.com/us/
+2)Перейти на вкладку "Cars"
+3)Нажать на символ выпадающего меню напротив поля "Enter a city or address".
+4)В появившемся меню выбрать 1 предложенную страну.
+5)В появившемся меню выбрать 1 предложенный город.
+6)В появившемся меню выбрать 1 предложенную точку аренды авто.
+7)Нажать кнопку "Book now".
+Expected result:
+Открывается страница выбора авто, соответствующего параметрам запроса(страна/город/точка аренды).
